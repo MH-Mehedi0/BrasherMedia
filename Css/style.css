@@ -1,0 +1,364 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body p{
+    font-family: 'Poppins', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Open Sans', sans-serif;
+}
+.navbar{
+    padding: 0px 0px;
+    background: #a3d4eb;
+}
+.navbar-nav a:hover{
+    color: rgb(10, 105, 247);
+}
+
+.carousel{
+    width: 100%;
+    height: 730px;
+    background-image: linear-gradient(rgba(55, 55, 53, 0.5),rgba(55, 55, 53, 0.5)), url(../img/Braher.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.carousel .text{
+    color: white;
+    width: 650px;
+    height: auto;
+    position: absolute;
+    margin:350px 100px;
+    
+}
+.carousel .text h1{
+    font-size: 50px;
+}
+
+/* News Section work............. */
+.categories-box{
+    display: flex;
+    height: auto;
+    border: 0px solid red;
+    box-shadow: 0px 0px 5px rgb(187, 183, 183);
+}
+.titles{
+    border-bottom: 1px solid black;
+}
+.categoris-titel{
+    padding: 20px 20px;
+}
+.categoris-titel h4{
+    text-align: center;
+    padding: 0px 0px 20px ;
+    font-weight: bolder;
+}
+
+.categoris-titel p{
+    text-align: justify;
+}
+.btn-readmore a{
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-top: 40px;
+    background: rgb(93, 207, 228);
+}
+.categories-img img{
+    width: 500px;
+    height: 350px;
+    padding: 20px 10px;
+    overflow: hidden;
+}
+
+.categories-img img:hover{
+    scale: 1.0;
+}
+
+/* Poem section ...................*/
+
+.poem{
+    padding: 60px;
+}
+
+/* Video Section......................... */
+
+.video-section{
+    margin-top: 40px;
+}
+.video-section .border-bottom{
+    border-bottom: 1px solid rgb(173, 168, 168);
+    padding-bottom: 20px;
+}
+.video-wraper{
+    display: flex;
+    justify-content: space-between;
+}
+.video-box{
+    width: 300px;
+    height: 303px;
+    box-shadow: 0px 0px 5px black;
+}
+.video-box a{
+    text-decoration: none;
+    color: black;
+    background: #f5f4f4;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+.fa-arrow-right{
+    margin: 5px 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Pc Devices.................................. */
+
+@media (min-width:769px) and (max-width:991px){
+    .carousel{
+        width: 100%;
+        height: 530px;
+    }
+    .carousel .text{
+        color: white;
+        width: 550px;
+        height: 350px;
+        margin: 140px 25px 0px ;
+    }
+    /* Categories Boxs ................. */
+
+    categories-box{
+        display: flex;
+        justify-content: space-between;
+        height: 200px;
+    }
+    .categoris-titel{
+        padding: 10px 40px;
+        height: 350px;
+        overflow: auto;
+    }
+
+    .categories-img img{
+        width: 300px;
+        height: 340px;
+        padding: 20px 25px;
+        overflow: auto;
+    }
+    pre{
+        text-align: justify;
+        font-size: 10px;
+        margin-left:-100px;
+    }
+
+    /* Video section..................... */
+
+    .video-wraper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .video-box{
+       margin-bottom: 25px;
+    }
+}
+
+
+
+
+/* Mediam Devices */
+
+@media (min-width: 369px) and (max-width: 768px) {
+
+    .carousel{
+        width: 766px;
+        height: 430px;
+    }
+    .carousel .text{
+        color: white;
+        width: 550px;
+        height: 350px;
+        overflow: auto;
+        position: absolute;
+        margin: 140px 25px 0px ;
+        
+    }
+    .carousel .text h1{
+        font-size: 40px;
+    }
+    .carousel .text p{
+        display: none;
+    }
+
+    /* Categories Boxs ................. */
+
+    categories-box{
+        display: flex;
+        height: 200px;
+        justify-content: space-between;
+    }
+    .categoris-titel{
+        padding: 10px 40px;
+        width: 520px;
+        height: 350px;
+        overflow: auto;
+    }
+
+    .categories-img img{
+        width: 200px;
+        height: 340px;
+        padding: 20px 25px;
+        overflow: auto;
+    }
+    .categoris-titel h4{
+        text-align: center;
+        padding: 0px 0px 20px ;
+        font-weight: bolder;
+        font-size: 15px;
+    }
+    
+    .categoris-titel p{
+        text-align: justify;
+        font-size: 10px;
+    }
+    .btn-readmore a{
+        text-decoration: none;
+        padding: 10px 20px;
+        margin: 40px;
+        background: rgb(93, 207, 228);
+    }
+
+    /* Poem section */
+
+    pre{
+        text-align: justify;
+        font-size: 10px;
+        margin-left:-60px;
+    }
+    .poem{
+        padding: 0px;
+    }
+/* Video section..................... */
+
+    .video-wraper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .video-box{
+       margin-bottom: 25px;
+    }
+
+}
+
+
+
+/*  Small size devices .................... */
+
+@media (max-width: 368px) {
+    .carousel{
+        width: 366px;
+        height: 230px;
+        background-image: linear-gradient(rgba(55, 55, 53, 0.5),rgba(55, 55, 53, 0.5)), url(../img/Braher.jpg);
+    
+    }
+    .carousel .text{
+        color: white;
+        width: 250px;
+        height: 250px;
+        overflow: auto;
+        position: absolute;
+        margin: 80px 25px 0px ;
+        
+    }
+    .carousel .text h1{
+        font-size: 20px;
+    }
+    .carousel .text p{
+        display: none;
+    }
+
+    /* Categories Boxs ................. */
+
+    categories-box{
+        display: flex;
+        justify-content: space-between;
+        height: 50px;
+        box-shadow: 0px 0px 5px rgb(187, 183, 183);
+    }
+    .categoris-titel{
+        padding: 10px 20px;
+        width: 220px;
+        height: 250px;
+        overflow: auto;
+    }
+
+    .categories-img img{
+        width: 100px;
+        height: 240px;
+        padding: 20px 5px;
+        overflow: auto;
+    }
+    .categoris-titel h4{
+        text-align: center;
+        padding: 0px 0px 20px ;
+        font-weight: bolder;
+        font-size: 15px;
+    }
+    
+    .categoris-titel p{
+        text-align: justify;
+        font-size: 10px;
+    }
+
+    /* Poem section */
+
+    pre{
+        text-align: justify;
+        font-size: 10px;
+        margin-left: -100px;
+    }
+    .poem{
+        padding: 0px;
+    }
+
+
+    /* Video section..................... */
+
+    .video-wraper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .video-box{
+       margin-bottom: 25px;
+    }
+    #v-box-none{
+        display: none;
+    }
+
+}
