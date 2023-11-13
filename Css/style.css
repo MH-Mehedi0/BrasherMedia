@@ -113,10 +113,69 @@ h1,h2,h3,h4,h5,h6{
     margin: 5px 10px;
 }
 
+/* Image section............................. */
+
+.our-imgs{
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.our-imgs h4{
+    border-bottom: 1px solid rgb(224, 221, 221);
+    padding-bottom: 20px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
 
 
+.img-col{
+    width: 200px;
+    height: 500px;
+    border: 1px solid red;
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom:30px;
+    position: relative;
+    overflow: hidden;
+}
+.img-col img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
 
+.layer{
+    background:transparent;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(226,0,0,0.7);
 
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
 
 
 
@@ -214,6 +273,7 @@ h1,h2,h3,h4,h5,h6{
         display: none;
     }
 
+
     /* Categories Boxs ................. */
 
     categories-box{
@@ -271,6 +331,17 @@ h1,h2,h3,h4,h5,h6{
     }
     .video-box{
        margin-bottom: 25px;
+    }
+
+/* img..........................  */
+      .row{
+        display: block;
+    }
+    .img-col{
+        margin: auto;
+        width: 80%;
+        height: 30%;
+        margin-bottom: 30px;
     }
 
 }
@@ -359,6 +430,17 @@ h1,h2,h3,h4,h5,h6{
     }
     #v-box-none{
         display: none;
+    }
+
+/* img..........................  */
+    .row{
+        display: block;
+    }
+    .img-col{
+        margin: auto;
+        width: 80%;
+        height: 30%;
+        margin-bottom: 30px;
     }
 
 }
