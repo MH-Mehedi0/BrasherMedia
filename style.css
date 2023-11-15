@@ -1,0 +1,532 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body p{
+    font-family: 'Poppins', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Open Sans', sans-serif;
+}
+.navbar{
+    padding: 0px 0px;
+    background: #a3d4eb;
+}
+.navbar-nav a:hover{
+    color: rgb(10, 105, 247);
+}
+
+.carousel{
+    width: 100%;
+    height: 730px;
+    background-image: linear-gradient(rgba(55, 55, 53, 0.5),rgba(55, 55, 53, 0.5)), url(../img/Braher.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.carousel .text{
+    color: white;
+    width: 650px;
+    height: auto;
+    position: absolute;
+    margin:350px 100px;
+    
+}
+.carousel .text h1{
+    font-size: 50px;
+}
+
+/* News Section work............. */
+.categories-box{
+    display: flex;
+    height: auto;
+    border: 0px solid red;
+    box-shadow: 0px 0px 5px rgb(187, 183, 183);
+}
+.titles{
+    border-bottom: 1px solid black;
+}
+.categoris-titel{
+    padding: 20px 20px;
+}
+.categoris-titel h4{
+    text-align: center;
+    padding: 0px 0px 20px ;
+    font-weight: bolder;
+}
+
+.categoris-titel p{
+    text-align: justify;
+}
+.btn-readmore a{
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-top: 40px;
+    background: rgb(93, 207, 228);
+}
+.categories-img img{
+    width: 500px;
+    height: 350px;
+    padding: 20px 10px;
+    overflow: hidden;
+}
+
+.categories-img img:hover{
+    transform: scale: 1.0;
+}
+
+/* Poem section ...................*/
+
+.poem{
+    padding: 60px;
+}
+
+/* Video Section......................... */
+
+.video-section{
+    margin-top: 40px;
+}
+.video-section .border-bottom{
+    border-bottom: 1px solid rgb(173, 168, 168);
+    padding-bottom: 20px;
+}
+.video-wraper{
+    display: flex;
+    justify-content: space-between;
+}
+.video-box{
+    width: 300px;
+    height: 303px;
+    box-shadow: 0px 0px 5px black;
+}
+.video-box a{
+    text-decoration: none;
+    color: black;
+    background: #f5f4f4;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+.fa-arrow-right{
+    margin: 5px 10px;
+}
+
+/* Image section............................. */
+
+.our-imgs{
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.our-imgs h4{
+    border-bottom: 1px solid rgb(224, 221, 221);
+    padding-bottom: 20px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+
+.img-col{
+    width: 200px;
+    height: 500px;
+    border: 1px solid red;
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom:30px;
+    position: relative;
+    overflow: hidden;
+}
+.img-col img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.layer{
+    background:transparent;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(45, 157, 216, 0.7);
+
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+/* -------------------Footer section --------  */
+
+.footer{
+    background-color: rgb(54, 53, 53);
+    width: 100%;
+    height:350px;
+}
+
+.footer-col{
+    width: 20%;
+    height: 200px;
+    margin: 50px 70px 0px;
+}
+.footer-col h4{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+.footer-col a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 6px;
+    transition:.5s;
+}
+.fa-chevron-right{
+    margin-right: 10px;
+    color: white;
+}
+.q-links a:hover{
+    letter-spacing: 1px;
+    color: rgb(228, 182, 121);
+}
+.cn{
+    margin-right: 10px;
+    color: white;
+}
+textarea{
+    width: 300px;
+    height: 100px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+input{
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+
+.copyright{
+    width: 100%;
+    border-top: 1px solid #6d6a6a;
+    margin-top: 40px;
+    padding: 5px;
+}
+.copyright p{
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    font-weight:lighter;
+    opacity: 60%;
+    margin-top: 10px;
+}
+.fa-copyright{
+    color: white;
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+/* Pc Devices.................................. */
+
+@media (min-width:769px) and (max-width:991px){
+    .carousel{
+        width: 100%;
+        height: 530px;
+    }
+    .carousel .text{
+        color: white;
+        width: 550px;
+        height: 350px;
+        margin: 140px 25px 0px ;
+    }
+    /* Categories Boxs ................. */
+
+    categories-box{
+        display: flex;
+        justify-content: space-between;
+        height: 200px;
+    }
+    .categoris-titel{
+        padding: 10px 40px;
+        height: 350px;
+        overflow: auto;
+    }
+
+    .categories-img img{
+        width: 300px;
+        height: 340px;
+        padding: 20px 25px;
+        overflow: auto;
+    }
+    pre{
+        text-align: justify;
+        font-size: 10px;
+        margin-left:-100px;
+    }
+
+    /* Video section..................... */
+
+    .video-wraper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .video-box{
+       margin-bottom: 25px;
+    }
+}
+
+
+
+
+/* Mediam Devices */
+
+@media (min-width: 369px) and (max-width: 768px) {
+
+    .carousel{
+        width: 766px;
+        height: 430px;
+    }
+    .carousel .text{
+        color: white;
+        width: 550px;
+        height: 350px;
+        overflow: auto;
+        position: absolute;
+        margin: 140px 25px 0px ;
+        
+    }
+    .carousel .text h1{
+        font-size: 40px;
+    }
+    .carousel .text p{
+        display: none;
+    }
+
+
+    /* Categories Boxs ................. */
+
+    categories-box{
+        display: flex;
+        height: 200px;
+        justify-content: space-between;
+    }
+    .categoris-titel{
+        padding: 10px 40px;
+        width: 520px;
+        height: 350px;
+        overflow: auto;
+    }
+
+    .categories-img img{
+        width: 200px;
+        height: 340px;
+        padding: 20px 25px;
+        overflow: auto;
+    }
+    .categoris-titel h4{
+        text-align: center;
+        padding: 0px 0px 20px ;
+        font-weight: bolder;
+        font-size: 15px;
+    }
+    
+    .categoris-titel p{
+        text-align: justify;
+        font-size: 10px;
+    }
+    .btn-readmore a{
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+
+    /* Poem section */
+
+    pre{
+        text-align: justify;
+        font-size: 10px;
+        margin-left:-60px;
+    }
+    .poem{
+        padding: 0px;
+    }
+/* Video section..................... */
+
+    .video-wraper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .video-box{
+       margin-bottom: 25px;
+    }
+
+/* img..........................  */
+      .row{
+        display: block;
+    }
+    .img-col{
+        margin: auto;
+        width: 80%;
+        height: 30%;
+        margin-bottom: 30px;
+    }
+    
+    
+/*    Footer..........................*/
+    .footer{
+        height: auto;
+    }
+    .footer-col{
+        width: 100%;
+        padding-top: 20px;
+    }
+    
+    
+
+}
+
+
+
+/*  Small size devices .................... */
+
+@media (max-width: 368px) {
+    .carousel{
+        width: 366px;
+        height: 230px;
+        background-image: linear-gradient(rgba(55, 55, 53, 0.5),rgba(55, 55, 53, 0.5)), url(../img/Braher.jpg);
+    
+    }
+    .carousel .text{
+        color: white;
+        width: 250px;
+        height: 250px;
+        overflow: auto;
+        position: absolute;
+        margin: 80px 25px 0px ;
+        
+    }
+    .carousel .text h1{
+        font-size: 20px;
+    }
+    .carousel .text p{
+        display: none;
+    }
+
+    /* Categories Boxs ................. */
+
+    categories-box{
+        display: flex;
+        justify-content: space-between;
+        height: 50px;
+        box-shadow: 0px 0px 5px rgb(187, 183, 183);
+    }
+    .categoris-titel{
+        padding: 10px 20px;
+        width: 220px;
+        height: 250px;
+        overflow: auto;
+    }
+
+    .categories-img img{
+        width: 100px;
+        height: 240px;
+        padding: 20px 5px;
+        overflow: auto;
+    }
+    .categoris-titel h4{
+        text-align: center;
+        padding: 0px 0px 20px ;
+        font-weight: bolder;
+        font-size: 15px;
+    }
+    
+    .categoris-titel p{
+        text-align: justify;
+        font-size: 10px;
+    }
+    
+    .btn-readmore a{
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+
+    /* Poem section */
+
+    pre{
+        text-align: justify;
+        font-size: 10px;
+        margin-left: -100px;
+    }
+    .poem{
+        padding: 0px;
+    }
+
+
+    /* Video section..................... */
+
+    .video-wraper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .video-box{
+       margin-bottom: 25px;
+    }
+    #v-box-none{
+        display: none;
+    }
+
+/* img..........................  */
+    .row{
+        display: block;
+    }
+    .img-col{
+        margin: auto;
+        width: 80%;
+        height: 30%;
+        margin-bottom: 30px;
+    }
+
+    /*    Footer..........................*/
+    .footer{
+        height: auto;
+    }
+    .footer-col{
+        width: 100%;
+        padding-top: 20px;
+    }
+    
+    textarea{
+        width: 230px;
+        height: 80px;
+    }
+    
+}
