@@ -13,8 +13,10 @@ h1,h2,h3,h4,h5,h6{
     padding: 0px 0px;
     background: #a3d4eb;
 }
+
+
 .navbar-nav a:hover{
-    color: rgb(10, 105, 247);
+    color: rgb(9, 71, 188);
 }
 
 .carousel{
@@ -73,7 +75,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .categories-img img:hover{
-    scale: 1.0;
+    transform: scale: 1.0;
 }
 
 /* Poem section ...................*/
@@ -157,7 +159,7 @@ h1,h2,h3,h4,h5,h6{
     transition: 0.5s;
 }
 .layer:hover{
-    background: rgba(226,0,0,0.7);
+    background: rgba(45, 157, 216, 0.7);
 
 }
 .layer h3{
@@ -177,17 +179,74 @@ h1,h2,h3,h4,h5,h6{
     opacity: 1;
 }
 
+/* -------------------Footer section --------  */
 
+.footer{
+    background-color: rgb(54, 53, 53);
+    width: 100%;
+    height:350px;
+}
 
+.footer-col{
+    width: 20%;
+    height: 200px;
+    margin: 50px 70px 0px;
+}
+.footer-col h4{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+.footer-col a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 6px;
+    transition:.5s;
+}
+.fa-chevron-right{
+    margin-right: 10px;
+    color: white;
+}
+.q-links a:hover{
+    letter-spacing: 1px;
+    color: rgb(228, 182, 121);
+}
+.cn{
+    margin-right: 10px;
+    color: white;
+}
+textarea{
+    width: 300px;
+    height: 100px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
 
+input{
+    padding: 5px 15px;
+    border-radius: 10px;
+}
 
-
-
-
-
-
-
-
+.copyright{
+    width: 100%;
+    border-top: 1px solid #6d6a6a;
+    margin-top: 40px;
+    padding: 5px;
+}
+.copyright p{
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    font-weight:lighter;
+    opacity: 60%;
+    margin-top: 10px;
+}
+.fa-copyright{
+    color: white;
+    margin-right: 10px;
+}
 
 
 
@@ -306,10 +365,8 @@ h1,h2,h3,h4,h5,h6{
         font-size: 10px;
     }
     .btn-readmore a{
-        text-decoration: none;
-        padding: 10px 20px;
-        margin: 40px;
-        background: rgb(93, 207, 228);
+        padding: 5px 10px;
+        font-size: 12px;
     }
 
     /* Poem section */
@@ -343,6 +400,18 @@ h1,h2,h3,h4,h5,h6{
         height: 30%;
         margin-bottom: 30px;
     }
+    
+    
+/*    Footer..........................*/
+    .footer{
+        height: auto;
+    }
+    .footer-col{
+        width: 100%;
+        padding-top: 20px;
+    }
+    
+    
 
 }
 
@@ -405,6 +474,11 @@ h1,h2,h3,h4,h5,h6{
         text-align: justify;
         font-size: 10px;
     }
+    
+    .btn-readmore a{
+        padding: 5px 10px;
+        font-size: 10px;
+    }
 
     /* Poem section */
 
@@ -443,4 +517,18 @@ h1,h2,h3,h4,h5,h6{
         margin-bottom: 30px;
     }
 
+    /*    Footer..........................*/
+    .footer{
+        height: auto;
+    }
+    .footer-col{
+        width: 100%;
+        padding-top: 20px;
+    }
+    
+    textarea{
+        width: 230px;
+        height: 80px;
+    }
+    
 }
