@@ -1,0 +1,362 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body p{
+    font-family: 'Poppins', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*-----------Header------------*/
+
+.header{
+    width: 100%;
+    background-color: #2ca5d1;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+
+
+/*
+nav{
+    display: flex;
+    padding: 1% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+    color: black;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    position: relative;
+}
+
+.nav-links a::after{
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    transform: scaleX(0);
+    transition: .3s;
+}
+
+.nav-links a:hover::after{
+    transform: scaleX(1);
+}
+
+nav .fa-solid{
+    display: none;
+}
+
+*/
+.navbar{
+    padding: 0px 0px;
+    background: #a3d4eb;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+
+.navbar-nav a:hover{
+    color: rgb(9, 71, 188);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.videos{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 100px;
+    position: relative;
+}
+.videos h3{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    background-color: #3a9ad6;
+    padding: 15px;
+}
+.title h5{
+    text-align: left;
+    font-weight: 400;
+    font-size: 25px;
+    margin-top: 15px;
+    margin-bottom: -15px;
+}
+
+.fa-solid{
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    margin-left: 10px;
+}
+.row{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+
+.video-col{
+    width: 312px;
+    height: 320px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 5px black;
+    box-shadow: 0px 0px 5px black;
+    margin: 8px 0;
+    position: relative;
+}
+.video-col iframe{
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.video-col h4{
+    position: 100%;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+
+/* -------------------Footer section --------  */
+
+.footer{
+    background-color: rgb(54, 53, 53);
+    width: 100%;
+    height:350px;
+}
+
+.footer-col{
+    width: 20%;
+    height: 200px;
+    margin: 50px 70px 0px;
+}
+.footer-col h4{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.footer-col a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 6px;
+    -webkit-transition:.5s;
+    transition:.5s;
+}
+.fa-chevron-right{
+    margin-right: 10px;
+    color: white;
+}
+.q-links a:hover{
+    letter-spacing: 1px;
+    color: rgb(228, 182, 121);
+}
+.cn{
+    margin-right: 10px;
+    color: white;
+}
+textarea{
+    width: 300px;
+    height: 100px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+input{
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+
+.copyright{
+    width: 100%;
+    border-top: 1px solid #6d6a6a;
+    margin-top: 40px;
+    padding: 5px;
+}
+.copyright p{
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    font-weight:lighter;
+    opacity: 60%;
+    margin-top: 10px;
+}
+.fa-copyright{
+    color: white;
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+/*Media Queary---------------------------*/
+
+@media (max-width: 768px){
+    
+/*--------------Nav--------------*/
+    
+/*
+    .nav-links ul li{
+        display: block;
+    }
+    
+    .nav-links{
+        position: absolute;
+        background-color: #48a3c4;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: .3s;
+    }
+    
+    nav .fa-solid{
+        display: block;
+        color: white;
+        margin: 10px;
+        cursor: pointer;
+        font-size: 20px;
+    }
+    .nav-links ul{
+        padding: 20px;
+        
+    }
+    
+    
+*/
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .video-col{
+        margin: auto;
+        bottom: -10px;
+        margin-bottom: 20px;
+    }
+    
+     /*    Footer..........................*/
+    .footer{
+        height: auto;
+    }
+    .footer-col{
+        width: 100%;
+        padding-top: 20px;
+    }
+    
+    textarea{
+        width: 230px;
+        height: 80px;
+    }
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
