@@ -4,24 +4,81 @@
     box-sizing: border-box;
 }
 body p{
-    font-family: 'Poppins', sans-serif;
+   font-family: 'Poppins', sans-serif;
 }
 h1,h2,h3,h4,h5,h6{
     font-family: 'Open Sans', sans-serif;
 }
-.navbar{
-    padding: 0px 0px;
-    background: #a3d4eb;
+
+/*-----------Header------------*/
+
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: #2ca5d1;
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 2;
+}
+
+
+/*--------------NAV Bar---------  */
+
+nav{
+    display: flex;
+    padding: .4% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: -1.5%;
+    color: black;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    position: relative;
+}
+
+.nav-links a::after{
+    content: "";
+    background-color: black;
+    position: absolute;
     width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    transform: scaleX(0);
+    transition: .3s;
+}
+
+.nav-links a:hover::after{
+    transform: scaleX(1);
+}
+
+nav .fa{
+    display: none;
 }
 
 
-.navbar-nav a:hover{
-    color: rgb(9, 71, 188);
-}
+/*...................Carousel..................*/
 
 .carousel{
     width: 100%;
@@ -315,7 +372,42 @@ input{
 /* Mediam Devices */
 
 @media (min-width: 369px) and (max-width: 768px) {
+    
+        
+    
+/*    -------------NAV Bar----------*/
+    
+     .nav-links ul li{
+        display: block;
+    }
+    
+    .nav-links{
+        position: absolute;
+        background-color: #48a3c4;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: .3s;
+    }
+    
+    nav .fa{
+        display: block;
+        color: white;
+        margin: 10px;
+        cursor: pointer;
+        font-size: 20px;
+    }
+    .nav-links ul{
+        padding: 20px;
+        
+    }
 
+    
+/*    ------------Carousel----------------*/
+    
     .carousel{
         width: 766px;
         height: 430px;
@@ -336,7 +428,7 @@ input{
         display: none;
     }
 
-
+    
     /* Categories Boxs ................. */
 
     categories-box{
@@ -406,6 +498,7 @@ input{
     }
     
     
+    
 /*    Footer..........................*/
     .footer{
         height: auto;
@@ -414,8 +507,7 @@ input{
         width: 100%;
         padding-top: 20px;
     }
-    
-    
+   
 
 }
 
@@ -424,6 +516,41 @@ input{
 /*  Small size devices .................... */
 
 @media (max-width: 368px) {
+    
+    
+          
+/*    -------------NAV Bar----------*/
+    
+     .nav-links ul li{
+        display: block;
+    }
+    
+    .nav-links{
+        position: absolute;
+        background-color: #48a3c4;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: .3s;
+    }
+    
+    nav .fa{
+        display: block;
+        color: white;
+        margin: 10px;
+        cursor: pointer;
+        font-size: 20px;
+    }
+    .nav-links ul{
+        padding: 20px;
+        
+    }
+    
+/*    ------------------Carousel------------*/
+    
     .carousel{
         width: 366px;
         height: 230px;
@@ -445,7 +572,8 @@ input{
     .carousel .text p{
         display: none;
     }
-
+    
+    
     /* Categories Boxs ................. */
 
     categories-box{
@@ -534,5 +662,14 @@ input{
         width: 230px;
         height: 80px;
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
 }

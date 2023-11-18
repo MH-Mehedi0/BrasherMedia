@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-body p{
+body{
     font-family: 'Poppins', sans-serif;
 }
 h1,h2,h3,h4,h5,h6{
@@ -26,7 +26,7 @@ h1,h2,h3,h4,h5,h6{
 
 nav{
     display: flex;
-    padding: 1% 6%;
+    padding: 0.4% 6%;
     justify-content: space-between;
     align-items: center;
 }
@@ -72,7 +72,7 @@ nav{
     transform: scaleX(1);
 }
 
-nav .fa-solid{
+nav .fa{
     display: none;
 }
 
@@ -131,11 +131,12 @@ nav .fa-solid{
 
 .video-col h4{
     position: 100%;
-    text-align: left;
+    text-align: justify;
     font-size: 15px;
     padding: 10px;
     box-sizing: border-box;
     margin-top: 15px;
+    margin: 0 auto;
 }
 
 
@@ -237,7 +238,7 @@ input{
         transition: .3s;
     }
     
-    nav .fa-solid{
+    nav .fa{
         display: block;
         color: white;
         margin: 10px;
@@ -249,25 +250,10 @@ input{
         
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+/*    -----------Videos -----------*/
+    .row{
+        flex-direction: column;
+    }
     .video-col{
         margin: auto;
         bottom: -10px;

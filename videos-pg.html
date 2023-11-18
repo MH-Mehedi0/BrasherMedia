@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Css/vidos-pg.css">
-    <title>Videos</title>
+    <title>Videos/BasherMedia</title>
     
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:ital,wght@1,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+    
     
 </head>
 <body>
@@ -19,7 +20,7 @@
        <nav>
            <a class="logo" href="index.html">BasherMedia</a>
            <div class="nav-links" id="navLinks" >
-              <i class="fa-solid fa-xmark" onclick="hideMenu"></i>
+            <i class="fa fa-times" onclick="hideMenu()"></i>
                <ul>
                    <li><a href="index.html">HOME</a></li>
                    <li><a href="#">NEWS</a></li>
@@ -29,7 +30,7 @@
                    
                </ul>
            </div>
-            <i class="fa-solid fa-bars" onclick="showMenu"></i>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
        </nav>
    </section>
 
@@ -233,21 +234,22 @@
     
  
     <script src="https://kit.fontawesome.com/9cc804c555.js" crossorigin="anonymous"></script>
-
-   <script>
     
-    var navLinks = document.getElementById("#navLinks");
+<!--    Toggle Menu------------->
+
+<script>
+    
+        var navLinks = document.getElementById("navLinks");
         
         function showMenu(){
-            navLink.style.right = "0";
-        } 
+            navLinks.style.right = "0";
+        }
         
         function hideMenu(){
-            navLink.style.right = "-200px";
+            navLinks.style.right = "-200px";
         }
+        
     
-    
-  
     
     </script>
 
