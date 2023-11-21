@@ -323,6 +323,7 @@ input{
     .carousel{
         width: 100%;
         height: 530px;
+        overflow-x: hidden;
     }
     .carousel .text{
         color: white;
@@ -412,6 +413,7 @@ input{
     .carousel{
         width: 100%;
         height: 430px;
+        overflow-x: hidden;
     }
     .carousel .text{
         color: white;
@@ -507,6 +509,7 @@ input{
     .footer-col{
         width: 100%;
         padding-top: 20px;
+        overflow-x: hidden;
     }
    
 
@@ -650,13 +653,15 @@ input{
         margin-bottom: 30px;
     }
 
-    /*    Footer..........................*/
+    /*--------------------Footer..........................*/
     .footer{
         height: auto;
+        overflow-x: hidden;
     }
     .footer-col{
         width: 100%;
         padding-top: 20px;
+        overflow-x: hidden;
     }
     
     textarea{
