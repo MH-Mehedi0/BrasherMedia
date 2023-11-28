@@ -137,7 +137,7 @@ nav .fa{
 }
 
 .categories-img img:hover{
-    transform: scale: 1.0;
+    transform: scale(1.0);
 }
 
 /* Poem section ...................*/
@@ -505,8 +505,10 @@ input{
 /*    Footer..........................*/
     .footer{
         height: auto;
+        overflow-x: hidden;
     }
     .footer-col{
+        overflow-x: hidden;
         width: 100%;
         padding-top: 20px;
         overflow-x: hidden;
